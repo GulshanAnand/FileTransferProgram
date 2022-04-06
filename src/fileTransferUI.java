@@ -41,14 +41,15 @@ public class fileTransferUI extends javax.swing.JFrame {
         setTitle("File Transfer");
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(133, 174, 185));
+        jPanel1.setBackground(new java.awt.Color(133, 209, 188));
+        jPanel1.setBorder(javax.swing.BorderFactory.createCompoundBorder());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Symbol", 2, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("File Transfer");
+        jLabel1.setFont(new java.awt.Font("Microsoft Tai Le", 0, 40)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(115, 29, 98));
+        jLabel1.setText("File Transfer Program");
 
-        sendButton.setBackground(new java.awt.Color(82, 0, 153));
-        sendButton.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
+        sendButton.setBackground(new java.awt.Color(70, 157, 243));
+        sendButton.setFont(new java.awt.Font("Segoe UI Symbol", 1, 14)); // NOI18N
         sendButton.setForeground(new java.awt.Color(255, 255, 255));
         sendButton.setText("Send");
         sendButton.addActionListener(new java.awt.event.ActionListener() {
@@ -57,8 +58,8 @@ public class fileTransferUI extends javax.swing.JFrame {
             }
         });
 
-        receiveButton.setBackground(new java.awt.Color(82, 0, 153));
-        receiveButton.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
+        receiveButton.setBackground(new java.awt.Color(70, 157, 243));
+        receiveButton.setFont(new java.awt.Font("Segoe UI Symbol", 1, 14)); // NOI18N
         receiveButton.setForeground(new java.awt.Color(255, 255, 255));
         receiveButton.setText("Receive");
         receiveButton.addActionListener(new java.awt.event.ActionListener() {
@@ -71,27 +72,27 @@ public class fileTransferUI extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(178, 178, 178)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(receiveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(sendButton, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(171, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(85, 85, 85))
+                .addContainerGap(178, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(sendButton, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80)
+                        .addComponent(receiveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(72, 72, 72))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(147, 147, 147))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addGap(79, 79, 79)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
-                .addComponent(sendButton)
-                .addGap(38, 38, 38)
-                .addComponent(receiveButton)
-                .addContainerGap(86, Short.MAX_VALUE))
+                .addGap(59, 59, 59)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(sendButton, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(receiveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(129, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
