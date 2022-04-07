@@ -68,11 +68,6 @@ public class receiver extends javax.swing.JFrame {
         acceptButton.setFont(new java.awt.Font("Segoe UI Symbol", 1, 14)); // NOI18N
         acceptButton.setForeground(new java.awt.Color(255, 255, 255));
         acceptButton.setText("Accept File");
-        acceptButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                acceptButtonMouseClicked(evt);
-            }
-        });
         acceptButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 acceptButtonActionPerformed(evt);
@@ -128,7 +123,7 @@ public class receiver extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void acceptButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_acceptButtonMouseClicked
+    private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
         // TODO add your handling code here:
         statusLabel.setText("Waiting for sender. . .");
         try {
@@ -155,10 +150,6 @@ public class receiver extends javax.swing.JFrame {
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(this, ex.toString());
         }
-    }//GEN-LAST:event_acceptButtonMouseClicked
-
-    private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_acceptButtonActionPerformed
 
     /**
